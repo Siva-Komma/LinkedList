@@ -15,6 +15,10 @@ namespace DSLinkedList
             st.Add(56);
             st.Add(30);
             st.Add(70);
+            Console.WriteLine("\nFirstNode Added ");
+            st.AddFirst(70);
+            st.AddFirst(30);
+            st.AddFirst(56);
             st.Display();
             Console.ReadLine();
         }
