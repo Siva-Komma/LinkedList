@@ -37,6 +37,21 @@ namespace DSLinkedList
         {
             AddFirst(data);
         }
+        public void Insert(int data, int position)
+        {
+            Node newNode = new Node(data);
+            newNode.data = data;
+            newNode.next = null;
+            if (position < 1)
+            {
+                Console.Write("\nposition should be greater than");
+            }
+            else if (position == 1)
+            {
+                newNode.next = head;
+                head = newNode;
+            }
+        }
         public void Display()
         {
             if (head == null)
