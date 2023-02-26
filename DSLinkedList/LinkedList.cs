@@ -51,7 +51,41 @@ namespace DSLinkedList
                 newNode.next = head;
                 head = newNode;
             }
+            else
+            {
+                Node temp = new Node(data);
+                temp = head;
+                for (int i = 1; i < position - 1; i++)
+                {
+                    if (temp != null)
+                    {
+                        temp = temp.next;
+                    }
+                }
+
+                if (temp != null)
+                {
+                    newNode.next = temp.next;
+                    temp.next = newNode;
+                }
+                else
+                {
+                    Console.Write("\nThe previous node is null.");
+                }
+            }
         }
+        public void Pop()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            else
+            {
+                head = head.next;
+                Console.WriteLine("\nRemoved 1st node");
+            }
+        } 
         public void Display()
         {
             if (head == null)

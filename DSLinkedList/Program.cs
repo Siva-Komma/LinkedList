@@ -26,7 +26,9 @@ namespace DSLinkedList
             Console.WriteLine("\nInsert");
             st.Add(56);
             st.Add(70);
-            st.Insert(30,1);
+            st.Insert(30,2);
+            Console.WriteLine("Delete");
+            st.Pop();
             st.Display();
             Console.ReadLine();
         }
