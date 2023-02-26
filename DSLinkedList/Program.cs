@@ -27,6 +27,11 @@ namespace DSLinkedList
             st.Add(56);
             st.Add(70);
             st.Insert(30,2);
+<<<<<<< HEAD
+=======
+            Console.WriteLine("Delete");
+            st.Pop();
+>>>>>>> UC5_Delete
             st.Display();
             Console.ReadLine();
         }
