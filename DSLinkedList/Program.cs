@@ -35,6 +35,8 @@ namespace DSLinkedList
             st.Search(30);
             Console.WriteLine("Insert Element in sequence");
             st.InsertNodeinSequence(40, 30);
+            Console.WriteLine("Delete specified Element");
+            st.PopanyElement(40);
             st.Display();
             Console.ReadLine();
         }

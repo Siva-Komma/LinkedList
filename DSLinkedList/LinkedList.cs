@@ -141,6 +141,33 @@ namespace DSLinkedList
             temp.next = node;
             Console.WriteLine("Node {0} inserted after {1}", data, afterNum);
         }
+        public void PopanyElement(int data)
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is empty");
+            }
+            else
+            {
+                Node temp = head;
+                if (temp.next != null)
+                {
+                    Console.WriteLine("Node deleted"+data);
+                }
+                else
+                {
+                    if (temp.next.data == data)
+                    {
+                        Console.WriteLine("Node deletd"+data);
+                    }
+                    else if (temp.next.data == data)
+                    {
+                        temp = temp.next.next;
+                        Console.WriteLine("Node should be deleted");
+                    }
+                }
+            }
+        }
         public void Display()
         {
             if (head == null)
