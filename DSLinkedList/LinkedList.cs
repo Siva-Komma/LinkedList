@@ -107,6 +107,28 @@ namespace DSLinkedList
                 }
             }
         }
+        public void Search(int input)
+        {
+            bool isFound = false;
+            if (head == null)
+                Console.WriteLine("LinkedList is Empty");
+            else
+            {
+                Node temp = head;
+                while (temp != null)
+                {
+                    if (temp.data == input)
+                    {
+                        isFound = true;
+                        Console.WriteLine("Given node {0} is present", input);
+                        break;
+                    }
+                    temp = temp.next;
+                }
+                if (!isFound)
+                    Console.WriteLine("Given node {0} is not present", input);
+            }
+        }
         public void Display()
         {
             if (head == null)
