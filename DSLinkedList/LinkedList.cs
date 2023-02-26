@@ -33,6 +33,10 @@ namespace DSLinkedList
             newNode.next = head;
             head = newNode;
         }
+        public void Append(int data)
+        {
+            AddFirst(data);
+        }
         public void Display()
         {
             if (head == null)

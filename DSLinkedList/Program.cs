@@ -19,6 +19,10 @@ namespace DSLinkedList
             st.AddFirst(70);
             st.AddFirst(30);
             st.AddFirst(56);
+            Console.WriteLine("\nAppended ");
+            st.Append(30);
+            st.AddFirst(56);
+            st.AddFirst(70);
             st.Display();
             Console.ReadLine();
         }
