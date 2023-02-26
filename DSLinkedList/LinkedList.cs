@@ -53,10 +53,6 @@ namespace DSLinkedList
             }
             else
             {
-<<<<<<< HEAD
-
-=======
->>>>>>> UC5_Delete
                 Node temp = new Node(data);
                 temp = head;
                 for (int i = 1; i < position - 1; i++)
@@ -78,9 +74,6 @@ namespace DSLinkedList
                 }
             }
         }
-<<<<<<< HEAD
-    
-=======
         public void Pop()
         {
             if (head == null)
@@ -92,8 +85,28 @@ namespace DSLinkedList
                 head = head.next;
                 Console.WriteLine("\nRemoved 1st node");
             }
-        } 
->>>>>>> UC5_Delete
+        }
+        public void PopLastNode()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked List empty");
+            }
+            else
+            {
+                if (head.next == null)
+                    head = null;
+                else
+                {
+                    Node temp = head;
+                    while (temp.next.next != null)
+                    {
+                        temp = temp.next;
+                    }
+                    temp.next = null;
+                }
+            }
+        }
         public void Display()
         {
             if (head == null)
