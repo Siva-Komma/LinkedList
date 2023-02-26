@@ -33,6 +33,8 @@ namespace DSLinkedList
             st.PopLastNode();
             Console.WriteLine("Search Element");
             st.Search(30);
+            Console.WriteLine("Insert Element in sequence");
+            st.InsertNodeinSequence(40, 30);
             st.Display();
             Console.ReadLine();
         }
